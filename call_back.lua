@@ -1,87 +1,87 @@
--- Флаг поддержания работы скрипта
+-- Р¤Р»Р°Рі РїРѕРґРґРµСЂР¶Р°РЅРёСЏ СЂР°Р±РѕС‚С‹ СЃРєСЂРёРїС‚Р°
 IsRun = true
 
 function main()
-   -- Цикл будет выполнятся, пока IsRun == true
+   -- Р¦РёРєР» Р±СѓРґРµС‚ РІС‹РїРѕР»РЅСЏС‚СЃСЏ, РїРѕРєР° IsRun == true
    while IsRun do
       sleep(3000)
    end
 end
 
 function OnAccountBalance()
-   message("OnAccountBalance - изменение позиции по счету "..tostring(os.clock()))
+   message("OnAccountBalance - РёР·РјРµРЅРµРЅРёРµ РїРѕР·РёС†РёРё РїРѕ СЃС‡РµС‚Сѓ "..tostring(os.clock()))
 end
 function OnAccountPosition()
-   message("OnAccountPosition - изменение позиции по счету "..tostring(os.clock()))
+   message("OnAccountPosition - РёР·РјРµРЅРµРЅРёРµ РїРѕР·РёС†РёРё РїРѕ СЃС‡РµС‚Сѓ "..tostring(os.clock()))
 end
 function OnAllTrade()
-   --message("OnAllTrade - новая обезличенная сделка "..tostring(os.clock()))
+   --message("OnAllTrade - РЅРѕРІР°СЏ РѕР±РµР·Р»РёС‡РµРЅРЅР°СЏ СЃРґРµР»РєР° "..tostring(os.clock()))
 end
 function OnCleanUp()
-   message("OnCleanUp - смена торговой сессии и при выгрузке файла qlua.dll "..tostring(os.clock()))
+   message("OnCleanUp - СЃРјРµРЅР° С‚РѕСЂРіРѕРІРѕР№ СЃРµСЃСЃРёРё Рё РїСЂРё РІС‹РіСЂСѓР·РєРµ С„Р°Р№Р»Р° qlua.dll "..tostring(os.clock()))
 end
 function OnClose()
-   message("OnClose - закрытие терминала QUIK "..tostring(os.clock()))
+   message("OnClose - Р·Р°РєСЂС‹С‚РёРµ С‚РµСЂРјРёРЅР°Р»Р° QUIK "..tostring(os.clock()))
 end
 function OnConnected()
-   message("OnConnected - установление связи с сервером QUIK "..tostring(os.clock()))
+   message("OnConnected - СѓСЃС‚Р°РЅРѕРІР»РµРЅРёРµ СЃРІСЏР·Рё СЃ СЃРµСЂРІРµСЂРѕРј QUIK "..tostring(os.clock()))
 end
 function OnDepoLimit()
-   message("OnDepoLimit - изменение бумажного лимита "..tostring(os.clock()))
+   message("OnDepoLimit - РёР·РјРµРЅРµРЅРёРµ Р±СѓРјР°Р¶РЅРѕРіРѕ Р»РёРјРёС‚Р° "..tostring(os.clock()))
 end
 function OnDepoLimitDelete()
-   message("OnDepoLimitDelete - удаление бумажного лимита "..tostring(os.clock()))
+   message("OnDepoLimitDelete - СѓРґР°Р»РµРЅРёРµ Р±СѓРјР°Р¶РЅРѕРіРѕ Р»РёРјРёС‚Р° "..tostring(os.clock()))
 end
 function OnDisconnected()
-   message("OnDisconnected - отключение от сервера QUIK "..tostring(os.clock()))
+   message("OnDisconnected - РѕС‚РєР»СЋС‡РµРЅРёРµ РѕС‚ СЃРµСЂРІРµСЂР° QUIK "..tostring(os.clock()))
 end
 function OnFirm()
-   message("OnFirm - описание новой фирмы "..tostring(os.clock()))
+   message("OnFirm - РѕРїРёСЃР°РЅРёРµ РЅРѕРІРѕР№ С„РёСЂРјС‹ "..tostring(os.clock()))
 end
 function OnFuturesClientHolding()
-   message("OnFuturesClientHolding - изменение позиции по срочному рынку "..tostring(os.clock()))
+   message("OnFuturesClientHolding - РёР·РјРµРЅРµРЅРёРµ РїРѕР·РёС†РёРё РїРѕ СЃСЂРѕС‡РЅРѕРјСѓ СЂС‹РЅРєСѓ "..tostring(os.clock()))
 end
 function OnFuturesLimitChange()
-   message("OnFuturesLimitChange - изменение ограничений по срочному рынку "..tostring(os.clock()))
+   message("OnFuturesLimitChange - РёР·РјРµРЅРµРЅРёРµ РѕРіСЂР°РЅРёС‡РµРЅРёР№ РїРѕ СЃСЂРѕС‡РЅРѕРјСѓ СЂС‹РЅРєСѓ "..tostring(os.clock()))
 end
 function OnFuturesLimitDelete()
-   message("OnFuturesLimitDelete - удаление лимита по срочному рынку "..tostring(os.clock()))
+   message("OnFuturesLimitDelete - СѓРґР°Р»РµРЅРёРµ Р»РёРјРёС‚Р° РїРѕ СЃСЂРѕС‡РЅРѕРјСѓ СЂС‹РЅРєСѓ "..tostring(os.clock()))
 end
 function OnInit()
-   message("OnInit - инициализация функции main "..tostring(os.clock()))
+   message("OnInit - РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ С„СѓРЅРєС†РёРё main "..tostring(os.clock()))
 end
 function OnMoneyLimit()
-   message("OnMoneyLimit - изменение денежного лимита "..tostring(os.clock()))
+   message("OnMoneyLimit - РёР·РјРµРЅРµРЅРёРµ РґРµРЅРµР¶РЅРѕРіРѕ Р»РёРјРёС‚Р° "..tostring(os.clock()))
 end
 function OnMoneyLimitDelete()
-   message("OnMoneyLimitDelete - удаление денежного лимита "..tostring(os.clock()))
+   message("OnMoneyLimitDelete - СѓРґР°Р»РµРЅРёРµ РґРµРЅРµР¶РЅРѕРіРѕ Р»РёРјРёС‚Р° "..tostring(os.clock()))
 end
 function OnNegDeal()
-   message("OnNegDeal - новая заявка на внебиржевую сделку "..tostring(os.clock()))
+   message("OnNegDeal - РЅРѕРІР°СЏ Р·Р°СЏРІРєР° РЅР° РІРЅРµР±РёСЂР¶РµРІСѓСЋ СЃРґРµР»РєСѓ "..tostring(os.clock()))
 end
 function OnNegTrade()
-   message("OnNegTrade - новая сделка для исполнения "..tostring(os.clock()))
+   message("OnNegTrade - РЅРѕРІР°СЏ СЃРґРµР»РєР° РґР»СЏ РёСЃРїРѕР»РЅРµРЅРёСЏ "..tostring(os.clock()))
 end
 function OnOrder()
-   message("OnOrder - новая заявка или изменение параметров существующей заявки "..tostring(os.clock()))
+   message("OnOrder - РЅРѕРІР°СЏ Р·Р°СЏРІРєР° РёР»Рё РёР·РјРµРЅРµРЅРёРµ РїР°СЂР°РјРµС‚СЂРѕРІ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµР№ Р·Р°СЏРІРєРё "..tostring(os.clock()))
 end
 function OnParam()
-   --message("OnParam - изменение текущих параметров "..tostring(os.clock()))
+   --message("OnParam - РёР·РјРµРЅРµРЅРёРµ С‚РµРєСѓС‰РёС… РїР°СЂР°РјРµС‚СЂРѕРІ "..tostring(os.clock()))
 end
 function OnQuote()
-   --message("OnQuote - изменение стакана котировок "..tostring(os.clock()))
+   --message("OnQuote - РёР·РјРµРЅРµРЅРёРµ СЃС‚Р°РєР°РЅР° РєРѕС‚РёСЂРѕРІРѕРє "..tostring(os.clock()))
 end
 function OnStop()
-   message("OnStop - остановка скрипта из диалога управления "..tostring(os.clock()))
-   -- Останавливает цикл в функции main
+   message("OnStop - РѕСЃС‚Р°РЅРѕРІРєР° СЃРєСЂРёРїС‚Р° РёР· РґРёР°Р»РѕРіР° СѓРїСЂР°РІР»РµРЅРёСЏ "..tostring(os.clock()))
+   -- РћСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ С†РёРєР» РІ С„СѓРЅРєС†РёРё main
    IsRun = false
 end
 function OnStopOrder()
-   message("OnStopOrder - новая стоп-заявка или изменение параметров существующей стоп-заявки "..tostring(os.clock()))
+   message("OnStopOrder - РЅРѕРІР°СЏ СЃС‚РѕРї-Р·Р°СЏРІРєР° РёР»Рё РёР·РјРµРЅРµРЅРёРµ РїР°СЂР°РјРµС‚СЂРѕРІ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµР№ СЃС‚РѕРї-Р·Р°СЏРІРєРё "..tostring(os.clock()))
 end
 function OnTrade()
-   message("OnTrade - новая сделка "..tostring(os.clock()))
+   message("OnTrade - РЅРѕРІР°СЏ СЃРґРµР»РєР° "..tostring(os.clock()))
 end
 function OnTransReply()
-   message("OnTransReply - ответ на транзакцию "..tostring(os.clock()))
+   message("OnTransReply - РѕС‚РІРµС‚ РЅР° С‚СЂР°РЅР·Р°РєС†РёСЋ "..tostring(os.clock()))
 end
