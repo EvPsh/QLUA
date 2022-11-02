@@ -1,6 +1,6 @@
 function main
 	-- пример работы функции. Приостановка на клиринг
-	local ServerTime=getInfoParam("SERVERTIME")
+	local ServerTime = getInfoParam("SERVERTIME")
 	local tTime = {"14:00:00","14:05:00"} -- время начала/окончания неторгового периода
 	local result = diffTime(tTime[1], tTime[2])
 
