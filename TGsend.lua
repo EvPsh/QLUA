@@ -1,5 +1,5 @@
 function TGsend(mText)
-	--[[
+--[[
   -- Ф-ция отправки сообщений в ТГ из LUA
   1. Создаём бота в Телеграмм с помощью @BotFather, вставляем токен вместо <токен>
   2. С помощью "узнать свой Telegramm-ID" узнаём свой ID, вставляем вместо ID_чата
@@ -7,7 +7,8 @@ function TGsend(mText)
   
   4. Использование TGsend("сообщение") - отправит сообщение в бот ТГ. 
   Для отправки сообщений с большой частой такой способ не подходит.
-	--]]
+  Использование в callback-ах Quika может подвесить поток.
+--]]
 
   str='C:\\curl-7.75.0-win32-mingw\\bin\\curl.exe -s -X POST https://api.telegram.org/bot<ТОКЕН>/sendMessage -d chat_id=<ID_чата> -d text="'..mText..'"'
 	os.execute(str)

@@ -6,7 +6,7 @@
 is_run = true
 
 -- Параметры
-tInstr = "BRZ1" --код инструмента/бумаги
+tInstr = "BRZ3" --код инструмента/бумаги
 classcode = "SPBFUT" --код класса инструмента/бумаги, если нужен фондовый рынок - вводить TQBR вместо SPBFUT
 iNterval = INTERVAL_M1 --таймфрейм
 -- доступные таймфреймы указаны в справке Quik (qlua.chm в папке с quik) по поиску CreateDataSource

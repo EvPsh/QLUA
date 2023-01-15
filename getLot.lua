@@ -1,11 +1,23 @@
-function getLot(classcode, seccode, ltPercent)
-	-- Функция получения возможного количества лотов,
-	-- исходя из ГО и средств на счёте. возвращает числовое значение
-	-- ltPercent = 100 -- использовать все свободные средства на счёте под торговлю фьючерсами.
+--[[ -- для теста убрать скобки
+function main()
+-- использование:
+---
+local classcode = "SPBFUT" 					-- код класса инструмента
+local seccode = "RIM3"						-- название инструмента
+local lot = GetLot(classcode, seccode, 50) 	-- проверяем данные ГО, вход на 50% от свободных средств
+	message("Возможный лот по инструменту " .. seccode .. " равняется " .. lot)
+end
+--]]
 
-	local lbuy = tonumber(getParamEx(classcode, seccode, "BUYDEPO").param_value) -- ГО покупателя
-	local lsell = tonumber(getParamEx(classcode, seccode, "SELLDEPO").param_value) -- ГО продавца
-	local fMoney = getItem("futures_client_limits", 0).cbplimit -- вот здесь может быть ошибка (соединение установлено, но данные с сервера ещё не подгружены, получаем ошибку)
+function GetLot(classcode, seccode, ltPercent)
+-- Функция получения возможного количества лотов,
+-- исходя из ГО и средств на счёте. возвращает числовое значение
+-- ltPercent = 100 -- использовать все свободные средства на счёте под торговлю фьючерсами.
+---
+
+local lbuy = tonumber(getParamEx(classcode, seccode, "BUYDEPO").param_value) -- ГО покупателя
+local lsell = tonumber(getParamEx(classcode, seccode, "SELLDEPO").param_value) -- ГО продавца
+local fMoney = getItem("futures_client_limits", 0).cbplimit -- вот здесь может быть ошибка (соединение установлено, но данные с сервера ещё не подгружены, получаем ошибку)
 
 	-- расчёт лота исходя из максимального ГО для инструмента.
 	if fMoney == 0 or fMoney == "" or fMoney == nil then -- если данные по свободным средствам не получены
