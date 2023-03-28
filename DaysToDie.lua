@@ -9,7 +9,7 @@ function DaysToDie(class_code, sec_code)
 	---------------------------------- получаем количество дней до погашения, если < 4, рекомендуем перейти на новый инструмент ----------
 	daysToDie = round(getParamEx(class_code, sec_code, "DAYS_TO_MAT_DATE").param_value, 0)
 	if daysToDie <= 4 and daysToDie > 0 then
-		message("Количество дней до погашения инструмента " .. SEC_CODE .. " равно " .. tostring(daysToDie) .. ". Необходимо заменить инструмент в настройках робота")
+		message("Количество дней до погашения инструмента " .. sec_code .. " равно " .. tostring(daysToDie) .. ". Необходимо заменить инструмент в настройках робота")
 	elseif	daysToDie == 0 or daysToDie == nil then
 		message("Инструмент больше не торгуется")
 		is_run = false
