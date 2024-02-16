@@ -41,7 +41,7 @@ local lParams = {}
     lParams.TRANSPARENT_BACKGROUND = 0 -- Прозрачность фона. «0» – отключена, «1» – включена
 
     lParams.TEXT = "Просто текст"
-    lParams.HINT = "Это всплывающая подсказска"
+    lParams.HINT = "Это всплывающая подсказка"
 
     AddLabel(idnt, lParams)
 end
