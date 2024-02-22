@@ -9,9 +9,9 @@ Settings=
         Name="Indukator",
         line =
         {
-            {Name = "H-C(H-O)", Color = RGB(0, 255, 0), Type = TYPE_LINE, Width = 2},
-            {Name = "C-O(O-C)", Color = RGB(0, 0, 255), Type = TYPE_LINE, Width = 2},
-            {Name = "O-L(C-L)", Color = RGB(255, 0, 0), Type = TYPE_LINE, Width = 2},
+            {Name = "H-C(H-O)", Color = RGB(0, 255, 0), Type = TYPE_POINT, Width = 2},
+            {Name = "C-O(O-C)", Color = RGB(0, 128, 128), Type = TYPE_LINE, Width = 2},
+            {Name = "O-L(C-L)", Color = RGB(255, 0, 0), Type = TYPE_POINT, Width = 2},
             {Name = "H-L(H-L)", Color = RGB(0, 128, 0), Type = TYPE_LINE, Width = 2}
 
         }
