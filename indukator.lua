@@ -17,7 +17,7 @@ Settings=
         }
     }
 function Init()
-    return 4 -- т.к. 4 линии - возвращаем четыре линии.
+    return #Settings.line -- т.к. 4 линии - возвращаем четыре линии.
 end
 
 function OnCalculate(idx)
