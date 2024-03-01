@@ -4,7 +4,7 @@
 -- на растущей свече - Open-Low, High-Close, Close-Open, High-Low. 
 -- Можно использовать для проверки средней цены разброса
 
-Settings=
+Settings = 
     {
         Name="Indukator",
         line =
