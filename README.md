@@ -35,6 +35,8 @@ QLUA, алготрейдинг, Quik, MOEX, FORTS
 
 #GetPriceStep.lua - функциия, получение шага цены инструмента.
 
+#GetSignalFromIndicator - программа, отдельный бот для мониторинга сигналов с индикатора.
+
 #GetTimeFrame.lua - функция, получение таймфрейма из разницы времени между свечами/барами.
 
 #GetWeekday.lua - функция, на вход integer месяц, integer день, на выходе - string день недели (monday - sunday)
